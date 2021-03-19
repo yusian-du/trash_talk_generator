@@ -1,0 +1,62 @@
+<div class="container">
+  <form action="/" method="POST">
+    <div class="row mt-5">
+      {{!-- card --}}
+      <div class="col-sm form-check-inline">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="btn">
+              <input class="form-check-input" type="radio" name="career" id="engineer" value="engineer">
+              <label class="form-check-label" for="engineer">
+                工程師
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- card --}}
+      <div class="col-sm form-check-inline">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="btn">
+              <input class="form-check-input" type="radio" name="career" id="designer" value="designer">
+              <label class="form-check-label" for="designer">
+                設計師
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- card --}}
+      <div class="col-sm form-check-inline">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="btn">
+              <input class="form-check-input" type="radio" name="career" id="entrepreneur" value="entrepreneur">
+              <label class="form-check-label" for="entrepreneur">
+                創業家
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{!-- btn and textbox --}}
+    <div class="row mt-5 text-box">
+      <div class="col-2">
+        <button type="submit" class="btn btn-primary mb-2">產生幹話</button>
+      </div>
+      <div class="col-10 alert alert-primary " role="alert" id="alertBtn">
+        {{rubbish}}
+      </div>
+    </div>
+  </form>
+
+
+</div>
